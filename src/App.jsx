@@ -6,7 +6,7 @@ function App() {
   const [input, setInput] = useState("");
   const [currentPage, setCurrentPage] = useState(1)
 
-  // 2) Using axios instance
+  // 1) Using axios instance
   useEffect(() => {
     fetchData()
   }, [])
@@ -15,7 +15,7 @@ function App() {
     setData(response?.data)
   }
 
-  // 1) Using fetch() api method
+  // 2) Using fetch() api method
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/posts")
   //     .then((res) => res.json()) // res.json() converts the response body into a JavaScript object/array.
